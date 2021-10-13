@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="font-awesome.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--Page Loader Start-->
+    <div class="page-loader">
+      <div class="page-loader-inner">
+        <div class="circle"></div>
+        Loading
+      </div>
+    </div>
+    <!--Page Loader End-->
+    <!--Bg Animation Effect Start-->
+    <div class="bg-animation-effect"></div>
+    <!--Bg Animation Effect End-->
+
+    <!--Overlay Effect Start-->
+    <div class="overlay-effect">
+      <div class="overlay-effect-item"></div>
+      <div class="overlay-effect-item"></div>
+      <div class="overlay-effect-item"></div>
+      <div class="overlay-effect-item"></div>
+      <div class="overlay-effect-item"></div>
+      <div class="overlay-effect-item"></div>
+      <div class="overlay-effect-item"></div>
+      <div class="overlay-effect-item"></div>
+      <div class="overlay-effect-item"></div>
+      <div class="overlay-effect-item"></div>
+    </div>
+    <!--Overlay Effect End-->
+
+    <!--Header Start-->
+    <header class="header">
+      <div class="container">
+        <div class="row flex-end">
+          <button type="button" class="nav-toggler">
+            <span></span>
+          </button>
+          <nav class="nav">
+            <div class="nav-inner">
+              <ul>
+                <li>
+                  <a href="#about" class="nav-item nav-link link-item">about</a>
+                </li>
+                <li>
+                  <a href="#portfolio" class="nav-item nav-link link-item"
+                    >portfolio</a
+                  >
+                </li>
+                <li>
+                  <a href="#contact" class="nav-item nav-link link-item"
+                    >contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--Header End-->
+
+    <!--About section start-->
+    <section class="about-section active" id="about">
+      <div class="container">
+        <div class="row min-vh-100">
+          <div class="about-content">
+            <img src="profile.jpg" alt="profile-img" />
+            <h1>Hi, My name is Ufuk Gursoy.</h1>
+            <p>
+              I'am a self-taught <span>front-end developer</span> living in
+              Warsaw, Poland. I make web sites/applications using
+              <span>html</span>, <span>css</span>, <span>javascript</span> and
+              <span>bootstrap</span>. Check out my latest work on the
+              <a href="#portfolio" class="link-item">portfolio page</a>. Want to
+              talk about project? You can get in touch with me
+              <a href="#contact" class="link-item">here</a>.
+            </p>
+            <h2>skills</h2>
+            <div class="skills">
+              <div class="skill-item">html</div>
+              <div class="skill-item">css</div>
+              <div class="skill-item">javascript</div>
+              <div class="skill-item">Bootstrap</div>
+              <div class="skill-item">Git</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--About section end-->
+    <!--Portfolio Section Start-->
+    <section class="portfolio-section sec-padding" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>recent works</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="portfolio-filter">
+            <button
+              type="button"
+              title="Show all works"
+              class="portfolio-filter-btn active"
+              data-filter="all"
+            >
+              all
+            </button>
+            <button
+              type="button"
+              title="Filter by Html&Css"
+              class="portfolio-filter-btn"
+              data-filter=" html"
+            >
+              html&css
+            </button>
+            <button
+              type="button"
+              title="Filter by Javascript"
+              class="portfolio-filter-btn"
+              data-filter="javascript"
+            >
+              Javascript
+            </button>
+            <button
+              type="button"
+              title="Filter by Games"
+              class="portfolio-filter-btn"
+              data-filter="games"
+            >
+              Games
+            </button>
+          </div>
+          <div class="filter-status">
+            <p></p>
+          </div>
+        </div>
+        <div class="row portfolio-items">
+          <!--portfolio item start-->
+          <div class="portfolio-item" data-category=" html">
+            <div class="portfolio-item-thumbnail">
+              <img src="img/portfolio/Navbar.png" alt="thumbnail" />
+              <button type="button" class="btn more-info-btn">more info</button>
+            </div>
+            <h3 class="portfolio-item-title">responsive navbar website</h3>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>
+                  Responsive Navbar is my first project. If you hover the items
+                  on the navbar, it will change the color and when the screen
+                  size decrease, items on the navbar will disappear and replace
+                  with icon, click to icon to see dropdown navbar.
+                </p>
+              </div>
+              <div class="general-info">
+                <p>Created - <span>10 July 2021</span></p>
+                <p>Technologies Used - <span>Html,Css</span></p>
+                <p>Role - <span>Front-End</span></p>
+                <p>Responsive - <span>Yes</span></p>
+                <p>
+                  View Online -
+                  <span
+                    ><a
+                      href="https://ufukgursoytr.github.io/Responsive-Navbar/"
+                      target="_blank"
+                      >https://ufukgursoytr.github.io/Responsive-Navbar/</a
+                    ></span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--portfolio item end-->
+
+          <!--portfolio item start-->
+          <div class="portfolio-item" data-category="javascript">
+            <div class="portfolio-item-thumbnail">
+              <img src="img/portfolio/digitalclock.png" alt="thumbnail" />
+              <button type="button" class="btn more-info-btn">more info</button>
+            </div>
+            <h3 class="portfolio-item-title">digital clock website</h3>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>Simple Digital Clock created with Javascript.</p>
+              </div>
+              <div class="general-info">
+                <p>Created - <span>22 July 2021</span></p>
+                <p>Technologies Used - <span>Html,Css,Javascript</span></p>
+                <p>Role - <span>Front-End</span></p>
+                <p>Responsive - <span>No</span></p>
+                <p>
+                  View Online -
+                  <span
+                    ><a
+                      href="https://ufukgursoytr.github.io/Digital-Clock/"
+                      target="_blank"
+                      >https://ufukgursoytr.github.io/Digital-Clock/</a
+                    ></span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--portfolio item end-->
+
+          <!--portfolio item start-->
+          <div class="portfolio-item" data-category="javascript">
+            <div class="portfolio-item-thumbnail">
+              <img src="img/portfolio/LiveCharacterCount.png" alt="thumbnail" />
+              <button type="button" class="btn more-info-btn">more info</button>
+            </div>
+            <h3 class="portfolio-item-title">live character count website</h3>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>
+                  Live Character Count created with Javascript. With the every
+                  letter you type, total character below will increase.
+                </p>
+              </div>
+              <div class="general-info">
+                <p>Created - <span>30 July 2021</span></p>
+                <p>Technologies Used - <span>Html,Css,Javascript</span></p>
+                <p>Role - <span>Front-End</span></p>
+                <p>Responsive - <span>No</span></p>
+                <p>
+                  View Online -
+                  <span
+                    ><a
+                      href="https://ufukgursoytr.github.io/Live-Character-Count/"
+                      target="_blank"
+                      >https://ufukgursoytr.github.io/Live-Character-Count/</a
+                    ></span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--portfolio item end-->
+
+          <!--portfolio item start-->
+          <div class="portfolio-item" data-category=" html">
+            <div class="portfolio-item-thumbnail">
+              <img
+                src="img/portfolio/AnimatedTextWebsite.png"
+                alt="thumbnail"
+              />
+              <button type="button" class="btn more-info-btn">more info</button>
+            </div>
+            <h3 class="portfolio-item-title">animated text effect website</h3>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>Animated Text Effect Website created only with Html&Css.</p>
+              </div>
+              <div class="general-info">
+                <p>Created - <span>5 August 2021</span></p>
+                <p>Technologies Used - <span>Html,Css</span></p>
+                <p>Role - <span>Front-End</span></p>
+                <p>Responsive - <span>No</span></p>
+                <p>
+                  View Online -
+                  <span
+                    ><a
+                      href="https://ufukgursoytr.github.io/Animated-Text-Effect-Website/"
+                      target="_blank"
+                      >https://ufukgursoytr.github.io/Animated-Text-Effect-Website/</a
+                    ></span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--portfolio item end-->
+
+          <!--portfolio item start-->
+          <div class="portfolio-item" data-category="javascript">
+            <div class="portfolio-item-thumbnail">
+              <img src="img/portfolio/Ecommerce.png" alt="thumbnail" />
+              <button type="button" class="btn more-info-btn">more info</button>
+            </div>
+            <h3 class="portfolio-item-title">e-commerce website</h3>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>
+                  E-commerce website created with Html,Css and Javascript,
+                  including multiple pages and responsive.
+                </p>
+              </div>
+              <div class="general-info">
+                <p>Created - <span>29 August 2021</span></p>
+                <p>Technologies Used - <span>Html,Css,Javascript</span></p>
+                <p>Role - <span>Front-End</span></p>
+                <p>Responsive - <span>Yes</span></p>
+                <p>
+                  View Online -
+                  <span
+                    ><a
+                      href="https://ufukgursoytr.github.io/E-Commerce-Website/"
+                      target="_blank"
+                      >https://ufukgursoytr.github.io/E-Commerce-Website/</a
+                    ></span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--portfolio item end-->
+
+          <!--portfolio item start-->
+          <div class="portfolio-item" data-category="javascript,games">
+            <div class="portfolio-item-thumbnail">
+              <img src="img/portfolio/GuessNumber.png" alt="thumbnail" />
+              <button type="button" class="btn more-info-btn">more info</button>
+            </div>
+            <h3 class="portfolio-item-title">guess my number game</h3>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>
+                  Guess My Number game is a basic game which you will try to
+                  guess the number. You have 20 chance to guess the number
+                  hovewer goal will be guess number with less try. (Number
+                  should be between 1 and 20)
+                </p>
+              </div>
+              <div class="general-info">
+                <p>Created - <span>10 September 2021</span></p>
+                <p>Technologies Used - <span>Html,Css,Javascript</span></p>
+                <p>Role - <span>Front-End</span></p>
+                <p>Responsive - <span>No</span></p>
+                <p>
+                  View Online -
+                  <span
+                    ><a
+                      href="https://ufukgursoytr.github.io/Guess-My-Number-Game/"
+                      target="_blank"
+                      >https://ufukgursoytr.github.io/Guess-My-Number-Game/</a
+                    ></span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--portfolio item end-->
+
+          <!--portfolio item start-->
+          <div class="portfolio-item" data-category="javascript,games">
+            <div class="portfolio-item-thumbnail">
+              <img src="img/portfolio/PigGame.png" alt="thumbnail" />
+              <button type="button" class="btn more-info-btn">more info</button>
+            </div>
+            <h3 class="portfolio-item-title">pig game</h3>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>
+                  Pig Game is a 2 player game and the main goal is to reach to
+                  100 points before your opponent. With rolling the dice you
+                  will collect points and you can see this points on the below
+                  'Current'. If you draw '1', you will lose your current points,
+                  your turn will be over, will be opponent turn. To save the
+                  points below the 'Current', you should click to 'Hold'. If you
+                  click 'Hold' you will add up your points and will be opponent
+                  turn.
+                </p>
+              </div>
+              <div class="general-info">
+                <p>Created - <span>25 September 2021</span></p>
+                <p>Technologies Used - <span>Html,Css,Javascript</span></p>
+                <p>Role - <span>Front-End</span></p>
+                <p>Responsive - <span>No</span></p>
+                <p>
+                  View Online -
+                  <span
+                    ><a
+                      href="https://ufukgursoytr.github.io/Pig-Game/"
+                      target="_blank"
+                      >https://ufukgursoytr.github.io/Pig-Game/</a
+                    ></span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--portfolio item end-->
+        </div>
+      </div>
+    </section>
+    <!--Portfolio Section End-->
+
+    <!--Contact Section Start-->
+    <section class="contact-section sec-padding min-vh-100" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>contact me</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="contact-content">
+            <div class="contact-text">
+              <p>
+                Below you can find my Social-Media links and E-mail adress. Feel
+                free to reach me out for projects or job offer. Be aware that
+                'Send Message' pop-up created only for project purpose :)
+              </p>
+            </div>
+            <div class="contact-info-item">
+              <p>E-mail me on <span>ufukgursoypl@gmail.com</span></p>
+            </div>
+            <div class="contact-info-item">
+              <p class="social-links">
+                <span>Find me on</span>
+                <a href="https://m.facebook.com/ufuk.gursoy1" target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+
+                <a
+                  href="https://www.instagram.com/ufuk.gursoyy/"
+                  target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/ufuk-gursoy-45724b1b8"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="https://github.com/UfukGursoyTR" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </p>
+            </div>
+            <button type="submit" class="btn toggle-contact-form-btn">
+              Send message
+            </button>
+          </div>
+          <!--Contact Form Start-->
+          <div class="contact-form">
+            <div class="contact-form-inner">
+              <div class="contact-form-container">
+                <button
+                  type="button"
+                  class="close-btn toggle-contact-form-btn"
+                ></button>
+                <form>
+                  <div class="row">
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        placeholder="Your Name"
+                        class="input-control"
+                      />
+                    </div>
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        placeholder="Your Email"
+                        class="input-control"
+                      />
+                    </div>
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        placeholder="Subject"
+                        class="input-control"
+                      />
+                    </div>
+                    <div class="input-group">
+                      <textarea
+                        placeholder="Message"
+                        class="input-control"
+                      ></textarea>
+                    </div>
+                    <div class="input-group">
+                      <button type="submit" class="btn btn-submit">Send</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!--Contact Form End-->
+        </div>
+      </div>
+    </section>
+    <!--Contact Section End-->
+
+    <!--Portfolio Item Details Popup Start-->
+    <div class="portfolio-popup">
+      <div class="pp-overlay"></div>
+      <div class="pp-inner">
+        <div class="pp-content">
+          <div class="pp-header">
+            <h2 class="pp-counter"></h2>
+            <button
+              type="button"
+              title="close"
+              class="close-btn pp-close-btn"
+            ></button>
+            <div class="pp-thumbnail">
+              <img src="img/portfolio/7.jpg" alt="pp-thumbnail" />
+            </div>
+            <h3></h3>
+          </div>
+          <div class="pp-body"></div>
+          <div class="pp-footer">
+            <div class="pp-footer-left hidden">
+              <button type="button" title="Prev Work" class="btn pp-prev-btn">
+                Previous
+              </button>
+              <h3></h3>
+              <img src="img/portfolio/1.jpg" alt="prev work thumbnail" />
+            </div>
+            <div class="pp-footer-right hidden">
+              <button type="button" title="Next Work" class="btn pp-next-btn">
+                next
+              </button>
+              <h3></h3>
+              <img src="img/portfolio/2.jpg" alt="next work thumbnail" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Portfolio Item Details Popup End-->
+    <script src="script.js"></script>
+  </body>
+</html>
